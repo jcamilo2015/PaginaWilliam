@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ALFARED</title>
+	<link rel="stylesheet" type="text/css" href="css/Diseño.css">
+	<link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+	<header> 
+		<img img src="imagenes/Foto1.jpg" width=50% > 
+		<nav> 
+			<ul>
+            	<li><a href="ALFARED.html">Inicio</a></li>
+            	<li class="dropdown">
+               		<a href="#">Servicios</a>
+                	<div class="dropdown-content">
+                    	<a href="Internet.html">Internet</a>
+                    	<a href="Electrico.html">Electrico</a>
+                	</div>
+            	</li>
+            <li><a href="Nosotros.html">Nosotros</a></li>
+           	<li><a href="Contacto.html">Contacto</a></li>
+        	</ul>
+		</nav>
+	</header>
+
+	<section class="wrapper">
+        <form class="formulario">
+            <label for="nombre">Ingrese el nombre:</label>
+            <input type="text" placeholder="Nombre" maxlength="24" name="nombre" id="nombre">
+            <label for="email">Ingrese el e-mail</label>
+            <input type="email" placeholder="E-mail" id="email">
+            <label for="asunto">Ingrese el asunto</label>
+            <textarea name="asunto" id="asunto" cols="30" rows="10"></textarea>
+            <input type="submit" value="Enviar" id="boton_enviar" onclick="guardar_localstorage()">
+        </form>
+    </section>
+
+	<footer>
+		<img src="imagenes/footer.jpg">
+	</footer>
+</body>
+</html>
